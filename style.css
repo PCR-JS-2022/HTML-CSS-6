@@ -40,7 +40,7 @@ main > section {
     grid-template-rows: 200px 25px 1fr;
     grid-template-areas:
             "preview info"
-            "preview grade"
+            "preview interface"
             "tags comments";
     row-gap: 20px;
     align-items: start;
@@ -95,7 +95,7 @@ main > section {
 
 .interface-block {
     display: flex;
-    grid-area: grade;
+    grid-area: interface;
     justify-content: space-between;
 }
 
@@ -224,7 +224,7 @@ footer p {
             "tags"
             "preview"
             "info"
-            "grade"
+            "interface"
             "comments";
         row-gap: 20px;
         align-items: start;
