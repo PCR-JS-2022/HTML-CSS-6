@@ -2,6 +2,9 @@ body {
   background-color: #fffcfc;
   min-height: 100vh;
   margin: 0;
+}
+
+.modal-open {
   overflow: hidden;
 }
 
@@ -24,7 +27,7 @@ h1 {
 
 main {
   position: relative;
-  padding: 40px 67px 40px 465px;
+  padding: 40px 15px;
   display: flex;
   flex-direction: column;
   gap: 82px;
@@ -34,25 +37,33 @@ main {
 
 figure {
   margin: 0;
-}
-
-figure img {
-  position: absolute;
-  left: 67px;
+  position: relative;
 }
 
 img {
   object-fit: cover;
 }
 
-figure aside {
+figure img {
+  width: 100%;
+  height: calc(100% - 160px);
   position: absolute;
-  left: 67px;
-  top: 302px;
-  width: 320px;
+  top: 59px;
+}
+
+figcaption {
+  display: grid;
+  grid-template-areas: 'time' 'address' 'tags' 'description';
+  position: relative;
+}
+
+figure aside {
   display: flex;
   flex-wrap: wrap;
   gap: 18px 24px;
+  grid-area: tags;
+  background-color: #fff;
+  padding: 31px 0 16px;
 }
 
 aside span {
@@ -62,12 +73,23 @@ aside span {
 
 figure time {
   font-weight: 700;
-  margin-bottom: 5px;
+  padding-bottom: 5px;
   display: block;
+  grid-area: time;
+  background-color: #fff;
 }
 
 address {
-  margin-bottom: 55px;
+  margin-bottom: 240px;
+  grid-area: address;
+  background-color: #fff;
+  padding-bottom: 18px;
+}
+
+figure p {
+  grid-area: description;
+  background-color: #fff;
+  margin: 0;
 }
 
 button {
@@ -92,7 +114,7 @@ span i {
   margin-right: 10px;
 }
 
-dialog {
+.modal-wrapper {
   position: fixed;
   z-index: 1;
   left: 0;
@@ -112,6 +134,7 @@ dialog {
   background-color: #fff;
   padding: 35px 48px;
   width: 1000px;
+  max-width: calc(100vw - 60px);
   max-height: calc(100vh - 72px);
   min-height: 300px;
   overflow-y: auto;
@@ -143,18 +166,21 @@ dialog {
 }
 
 .modal-like {
-  width: 20%;
-  float: left;
-  padding: 39px 10px;
+  padding: 30px 10px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 25px;
+  height: 239px;
 }
 
 .modal-like-avatar {
   border-radius: 50%;
+}
+
+.modal-like-name {
+  text-align: center;
 }
 
 section > ul {
@@ -200,7 +226,7 @@ li p {
 
 li ul {
   grid-area: subcomment;
-  padding-left: 172px;
+  padding-left: 60px;
 }
 
 li li:nth-child(odd) {
@@ -209,4 +235,59 @@ li li:nth-child(odd) {
 
 footer {
   border-top: 1px solid #c4c4c4;
+}
+
+@media (min-width: 576px) {
+  main {
+    padding-left: 67px;
+    padding-right: 67px;
+  }
+
+  .modal-like {
+    width: 33.3%;
+    float: left;
+  }
+
+  li ul {
+    padding-left: 172px;
+  }
+}
+
+@media (min-width: 768px) {
+  .modal-like {
+    width: 20%;
+  }
+}
+
+@media (min-width: 992px) {
+  main {
+    padding-left: 465px;
+  }
+
+  figure {
+    position: static;
+  }
+
+  figure img {
+    left: 67px;
+    width: 320px;
+    height: 240px;
+    top: 40px;
+  }
+
+  figcaption {
+    position: static;
+  }
+
+  address {
+    margin-bottom: 37px;
+  }
+
+  figure aside {
+    position: absolute;
+    left: 67px;
+    top: 302px;
+    width: 320px;
+    padding: 0;
+  }
 }

@@ -1,8 +1,19 @@
-document.querySelector('button').addEventListener('click', e => {
-  const button = e.target.closest('button');
-  const counter = button.querySelector('span');
-  counter.innerHTML = +counter.innerHTML + 1;
-  button.querySelector('i').innerHTML = '💙';
+const dialog = document.querySelector('dialog');
+
+document.querySelector('button').addEventListener('click', () => {
+  document.body.classList.add('modal-open');
+  dialog.open = true;
+});
+
+const closeModal = () => {
+  document.body.classList.remove('modal-open');
+  dialog.open = false;
+};
+document.querySelector('.modal-close').addEventListener('click', closeModal);
+dialog.addEventListener('click', e => {
+  if (e.target.classList.contains('modal-wrapper')) {
+    closeModal();
+  }
 });
 
 document.querySelector('button:last-child').addEventListener('click', e => {
