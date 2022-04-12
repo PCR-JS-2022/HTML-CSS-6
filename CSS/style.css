@@ -1,0 +1,165 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ 
+html, body, header, footer, main, section, figcaption, aside, div {
+    display: flex;
+}
+
+html, body, header, footer, h1, h4, figure, aside > div > ul,
+aside  div section div section img {
+    margin: 0;
+}
+
+html, body, header, footer{
+    width: 100%;
+    padding: 0;
+}
+
+body, aside, 
+aside > div, 
+aside > div > section:nth-child(1),
+ul > li > div > div {
+    flex-direction: column;
+    flex: 1 1 100%;
+}
+
+body {
+    height: 100%;
+    border-left: 3px solid rgb(165, 164, 162);
+    border-right: 3px solid rgb(165, 164, 162);
+    background-color: rgb(243, 221, 188);
+}
+
+header, footer {
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(195, 252, 212);
+}
+
+body header {
+    border-bottom: 3px solid rgb(165, 164, 162);
+}
+
+main {
+    flex-basis: calc(100vh - 106px);
+    font-size: 15px;
+}
+
+article {
+    width: 440px;
+}
+
+figure {
+    height: fit-content;
+    padding: 50px;
+    padding-top: 35px;
+}
+
+img{
+    width: 320px;
+    height: 240px;
+    margin: 0 10px 30px 10px;
+}
+
+figcaption {
+    flex-wrap: wrap;
+}
+
+span {
+    width: fit-content;
+    margin: 0 10px 10px 10px;
+}
+
+aside {
+    flex-basis: 100%;
+    padding: 35px 60px 0 10px;
+}
+
+aside > div,
+aside > div > section:nth-child(2),
+li > div > div > div {
+    justify-content: space-between;
+}
+
+aside > div > section:nth-child(1) {
+    flex-basis: calc((100vh - 200px) / 2);
+}
+
+aside > div > section:nth-child(2) {
+    align-items: center;
+    margin: 25px 0 10px 0;
+}
+
+h2 {
+    margin: 0 0 40px 0;
+}
+
+section > div > section {
+    margin-right: 15%;
+}
+
+section img {
+    width: 20px;
+    height: 20px;
+}
+
+button {
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    background-color: rgb(243, 221, 188);
+    border-width: 0px;
+    cursor: pointer;
+}
+
+li::marker {
+    color: rgb(243, 221, 188);
+}
+
+li > ul > li:nth-child(odd){
+    background-color: rgb(227, 235, 229); 
+    border-radius: 15px;
+}
+
+aside > div > ul {
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+ul > li > ul {
+    margin-left: 16%;
+}
+
+ul > li > div,
+li > ul > li > div {
+    border: 2px solid rgb(165, 164, 162);
+    border-radius: 15px;
+}
+
+div > img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    justify-content: center;
+    margin: 5px 20px 5px 12px;
+}
+
+div > div > div > p:last-child {
+    font-size: 12px;
+}
+
+div > div > div:nth-child(1n+1),
+div > div {
+    margin: 0 7px 0 0;
+}
+
+div > p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer{
+    border-top: 3px solid rgb(165, 164, 162);
+}
