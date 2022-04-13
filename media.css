@@ -1,0 +1,41 @@
+@media (max-width: 768px) {
+    main {
+        display: block;
+        padding: 25px;
+    }
+    main > section > div {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    main > section > div > img{
+        width: 100%;
+        height: auto;
+        margin-top: 15px;
+    }
+
+    main > div > section:first-child {
+        font-size: 16px;
+        margin-top: 15px;
+    }
+    
+    main > div > section:nth-child(2) > div:nth-child(2) > ul {
+        padding: 0;
+    }
+}
+
+@media (max-width: 575px) {
+    header {
+        min-height: 70px;
+    }
+    header > h1 {
+        font-size: 25px;
+    }
+    main > div > section:nth-child(2) > div:nth-child(2) > ul li > div{
+        min-height: 80px;
+    }
+    footer {
+        height: 70px;
+    }
+}

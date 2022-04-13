@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+    --main-color: #4682B4;
+}
+
+header {
+    background-color: var(--main-color);
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    padding: 45px;
+}
+
+main > section > div {
+    width: 400px;
+}
+
+main > section > div > img {
+    width: 320px;
+    height: 240px;
+    object-fit: cover;
+}
+
+main > section > div > ul {
+    list-style-type: none;
+    margin: 10px 0 0 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main > section > div > ul > li {
+    background-color: var(--main-color);
+    margin: 0 10px 10px 0;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+main > div {
+    width: 100%;
+}
+
+main > div > section:first-child {
+    font-size: 20px;
+}
+
+main > div > section:nth-child(2) > div:first-child {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main > div > section:nth-child(2) > div:first-child > div {
+    display: flex;
+    align-items: center;
+    color: grey;
+}
+
+main > div > section:nth-child(2) > div:first-child > div > div{
+    margin-right: 10px;
+}
+
+main > div > section:nth-child(2) > div:first-child > div > div > button {
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+main > div > section:nth-child(2) > div:first-child > div > div > button > img {
+    width: 16px;
+    height: 16px;
+}
+
+main > div > section:nth-child(2) > div:first-child > button {
+    background-color: var(--main-color);
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+main > div > section:nth-child(2) > div:nth-child(2) {
+    margin-top: 15px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+main > div > section:nth-child(2) > div:nth-child(2) ul {
+    list-style-type: none;
+}
+
+main > div > section:nth-child(2) > div:nth-child(2) > ul li > div{
+    display: flex;
+    align-items: center;
+    min-height: 100px;
+}
+
+main > div > section:nth-child(2) > div:nth-child(2) > ul li img{
+    width: 29px;
+    height: 29px;
+    margin-right: 20px;
+}
+
+main > div > section:nth-child(2) > div:nth-child(2) > ul li > ul > li:nth-child(odd){
+    padding: 10px;
+    background-color: #c3d9eb;
+}
+
+footer {
+    height: 80px;
+    background-color: var(--main-color);
+}
