@@ -103,21 +103,52 @@ header {
 
 .photo-layout .content-block .comments .comment .avatar,
 .photo-layout .content-block .comments .comment-answer .avatar {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .photo-layout .content-block .comments .comment-answer {
-    max-width: 80%;
-    margin-left: auto;
-    border-top: none;
+  max-width: 80%;
+  margin-left: auto;
+  border-top: none;
 }
 
-.photo-layout .content-block .comments .comment-answer:nth-child(2n){
-    background-color: #C4C4C433;
+.photo-layout .content-block .comments .comment-answer:nth-child(2n) {
+  background-color: #c4c4c433;
 }
 
 footer {
-    margin-top: 30px;
-    min-height: 50px;
-    border-top: var(--border-grey);
+  margin-top: 30px;
+  min-height: 50px;
+  border-top: var(--border-grey);
+}
+
+@media screen and (max-width: 1024px) {
+  .photo-layout {
+    display: block;
+    padding: 20px 40px 0px 40px;
+  }
+  .photo-layout .photo-block {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .photo-layout .photo-block .photo img {
+    max-width: 450px;
+    height: 186px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .photo-layout {
+    display: block;
+    padding: 20px 10px 0px 10px;
+  }
+  .photo-layout .photo-block .tags {
+    justify-content: space-between;
+  }
+  .photo-layout .photo-block .tags .tag {
+    padding: 10px;
+  }
+  .photo-layout .content-block .activity-block .like p {
+    margin-right: 10px;
+}
 }
