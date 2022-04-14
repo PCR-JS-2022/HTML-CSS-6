@@ -1,0 +1,62 @@
+header > div img {
+    cursor: pointer;
+}
+
+header > div:nth-child(2) {
+    cursor: pointer;
+}
+
+section {
+    margin-top: 50px;
+}
+
+section > header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+section > header > div {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+section > header > div > div {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+section > ol {
+    margin-top: 10px;
+}
+
+ol {
+    list-style: none;
+}
+
+li > ol {
+    margin-left: 100px;
+}
+
+li > ol > li:nth-child(odd) {
+    background-color: rgba(196, 196, 196, 0.2);
+}
+
+article {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px solid #E2E2E2;
+    border-bottom: 1px solid #E2E2E2;
+    padding: 10px 0px;
+}
+
+article > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
