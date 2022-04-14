@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    height: 60px;
+    border-bottom: 2px solid rgba(125, 125, 128);
+}
+
+main>div:first-child {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+main>div:first-child>div:first-child {
+    margin: 35px 0 0 60px;
+}
+
+main>div:first-child>div:first-child>section:first-child {
+    width: 320px;
+    height: 240px;
+    background: url('https://www.androidpolice.com/wp-content/uploads/2020/10/31/DSC02545-01-01-01-668x445.jpeg');
+    background-size: cover;
+    overflow: hidden;
+}
+
+main>div:first-child>div:first-child>section:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+main>div:first-child>div:first-child>section:nth-child(2) div {
+    margin-top: 20px;
+    min-width: 50px;
+    background: rgb(202, 202, 202);
+    padding: 8px;
+    margin-right: 10px;
+}
+
+main>div:first-child>div:nth-child(2) {
+    margin: 35px 60px 0 60px;
+    display: grid;
+    grid-template-rows: 1.2fr .3fr 3fr;
+}
+
+main>div:first-child>div:nth-child(2)>section:first-child {
+    background: rgba(175, 139, 122, 0.5);
+    height: 120px;
+    padding: 10px;
+}
+
+main>div:first-child>div:nth-child(2)>section:first-child div {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+main>div:first-child>div:nth-child(2)>section:nth-child(2) span {
+    font-size: 18px;
+}
+
+main>div:first-child>div:nth-child(2)>section:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+}
+
+main>div:first-child>div:nth-child(2)>section:nth-child(2)>div:first-child {
+    padding-bottom: 30px;
+}
+
+main>div:first-child>div:nth-child(2)>section:nth-child(2)>div:nth-child(2):hover {
+    cursor: pointer;
+}
+
+main>div:first-child>div:nth-child(2)>section:nth-child(2)>div:first-child span {
+    padding-right: 55px;
+}
+
+main>div:first-child>div:nth-child(2)>section:nth-child(2)>div:first-child span:first-child:before {
+    content: url(img/heart.png);
+    display: inline-block;
+    margin-right: 10px;
+}
+
+main>div:first-child>div:nth-child(2)>section:nth-child(2)>div:first-child span:nth-child(2):before {
+    content: url(img/comment.png);
+    display: inline-block;
+    margin-right: 10px;
+}
+
+main>div:first-child>div:nth-child(2)>section:nth-child(2)>div:first-child span:first-child:hover,
+main>div:first-child>div:nth-child(2)>section:nth-child(2)>div:first-child span:nth-child(2):hover {
+    cursor: pointer;
+}
+
+main>div:first-child>div:nth-child(2)>section:last-child>div>div:first-child {
+    min-height: 50px;
+    border-bottom: 3px solid rgba(240, 240, 240);
+    border-top: 3px solid rgba(240, 240, 240);
+}
+
+main>div:first-child>div:nth-child(2)>section:last-child>div>div:first-child,
+main>div:first-child>div:nth-child(2)>section:last-child>div>div:last-child>div {
+    display: flex;
+    padding: 10px;
+}
+
+main>div:first-child>div:nth-child(2)>section:last-child>div>div:first-child>div:first-child,
+main>div:first-child>div:nth-child(2)>section:last-child>div>div:last-child>div>div:first-child {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: url('https://sun9-27.userapi.com/c844616/v844616495/15185f/wLwjlF-wHUU.jpg?ava=1');
+}
+
+main>div:first-child>div:nth-child(2)>section:last-child>div>div:last-child>div {
+    margin-left: 100px;
+}
+
+main>div:first-child>div:nth-child(2)>section:last-child>div>div:last-child>div:nth-child(odd) {
+    background-color: mistyrose;
+}
+
+footer {
+    margin-top: 50px;
+    height: 60px;
+    border-top: 2px solid rgba(125, 125, 128);
+}
+
+@media (max-width:1200px) {
+    main>div:first-child {
+        grid-template-columns: none;
+    }
+}
+
+@media (max-width:700px) {
+    main>div:first-child>div:nth-child(2)>section:first-child {
+        height: auto;
+    }
+
+    main>div:first-child>div:nth-child(2)>section:first-child {
+        margin-bottom: 20px;
+    }
+
+}
+
+
+@media (max-width:600px) {
+    main>div:first-child>div:nth-child(2)>section:nth-child(2)>div:first-child span:first-child {
+        display: none;
+    }
+
+    main>div:first-child>div:nth-child(2)>section:nth-child(2)>div:first-child span:nth-child(2) {
+        display: none;
+    }
+
+    main>div:first-child>div:nth-child(2)>section:last-child>div>div:first-child>div:first-child,
+    main>div:first-child>div:nth-child(2)>section:last-child>div>div:last-child>div>div:first-child {
+        background: none;
+        display: none;
+    }
+
+    main>div:first-child {
+        grid-template-columns: none;
+    }
+
+    main>div:first-child>div:first-child>section:first-child {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+}
