@@ -1,0 +1,127 @@
+body {
+    margin: 0px;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+}
+    
+header, footer {
+    text-align: center;
+    height: 35px;
+    background-color: #EFEFEF;
+    flex: 0 0 auto;
+}
+    
+main {
+    background-color:#fff;
+    width: 100%;
+    display: inline-flex;
+    flex: 1 0 auto;
+}
+
+html {
+    height: 100%;
+}
+
+main > div {
+    width: 30%;
+}
+
+main > div > div {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+main > div > img {
+    width: 320px;
+    height: 240px;
+    display: block;
+    margin: 1em auto;
+    max-width: 100%;
+}
+
+section {
+    width: 70%;
+    padding: 1.5em;
+}
+
+a {
+    display: inline-flex;
+    padding: 1.5em;
+    margin: 0.5em;
+    font: 18px arial;
+    background-color: #E9E3E3;
+    float:left;
+}
+
+
+
+section > div:nth-child(2) {
+    display: flex;
+    gap: 10px;
+}
+
+section > div:nth-child(2) > img{
+    width: 20px;
+    height: 20px;
+}
+
+section > div:nth-child(2) > button{
+    margin-left: auto;
+}
+
+section > div:nth-child(3) > div > div > img,
+section > div:nth-child(3) > article > div > div > img {
+  border-radius: 100%;
+  width: 45px; 
+  height: 45px; 
+  margin: 0.5em;
+}
+
+
+
+section > div:nth-child(3) > div > div,
+section > div:nth-child(3) > article > div > div {
+    display: inline-flex;
+    border-top: 1px solid #E2E2E2;
+    border-bottom: 1px solid #E2E2E2;
+}
+section > div:nth-child(3) > div > div > div > p,
+section > div:nth-child(3) > div > div > div > h3,
+section > div:nth-child(3) > article > div > div > div > p,
+section > div:nth-child(3) > article > div > div > div > h3 {
+    margin: 0;
+}
+
+
+
+  section > div:nth-child(3) > article > div > div {
+    margin-left: 30%;
+  }
+
+  section > div:nth-child(3) > article > div > div:nth-child(2n+1){
+      background-color: rgba(196, 196, 196, 0.2);
+  }
+
+  @media (max-width: 798px){
+      main {
+          flex-direction: column;
+      }
+
+      main > div {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+      }
+
+      main > div > div {
+          order: -1;
+      }
+
+      section {
+          width: 90%;
+          margin: 5%;
+          padding: 0%;
+      }
+  }
