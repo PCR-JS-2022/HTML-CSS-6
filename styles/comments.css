@@ -1,0 +1,51 @@
+article section > div {
+    display: grid;
+    padding: 8px;
+    grid-template-columns: 64px 1fr;
+    grid-template-rows: 20px 20px 40px;
+    grid-template-areas:
+            "image name"
+            "image date"
+            "image message";
+    row-gap: 8px;
+    column-gap: 25px;
+    border-bottom: 2px solid gainsboro;
+    border-top: 2px solid gainsboro;
+    align-items: center;
+}
+
+section > div > img {
+    grid-area: image;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+section > div > img + span {
+    grid-area: name;
+}
+
+section > div > span + span {
+    grid-area: date;
+    font-size: smaller;
+}
+
+section > section > div:last-child {
+    border: none;
+}
+
+section > section > div:first-child {
+    border: none;
+}
+
+section > div > p {
+    grid-area: message;
+}
+
+section > section > div {
+    margin-left: 100px;
+}
+
+section > section > div:nth-of-type(odd) {
+    background: whitesmoke;
+}

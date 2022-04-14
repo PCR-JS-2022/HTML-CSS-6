@@ -1,0 +1,63 @@
+article {
+    display: grid;
+    grid-template-columns: 320px 1fr 120px;
+    grid-template-rows: 200px 25px 1fr;
+    grid-template-areas:
+            "photo info info"
+            "photo actions add_comment"
+            "tags comments comments";
+    row-gap: 20px;
+    column-gap: 60px;
+}
+
+article > img {
+    grid-area: photo;
+    width: 320px;
+    height: 240px;
+    border-radius: 3px;
+}
+
+article > img + div {
+    grid-area: info;
+}
+
+article > img + div > p {
+    margin: 0 0 20px 0;
+}
+
+article > span {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: tags;
+}
+
+article > span span {
+    background: rgba(154, 159, 158, 0.20);
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin-right: 20px;
+    height: fit-content;
+}
+
+article > span + div {
+    grid-area: actions;
+    display: flex;
+    align-items: center;
+}
+
+article > span + div > span {
+    padding-left: 8px;
+    margin-right: 20px;
+}
+
+article > button {
+    cursor: pointer;
+    font-size: large;
+    background: transparent;
+    border: none;
+    grid-area: add_comment;
+}
+
+article section {
+    grid-area: comments;
+}
