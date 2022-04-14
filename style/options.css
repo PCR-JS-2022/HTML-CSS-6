@@ -1,0 +1,26 @@
+main > section:last-child > div {
+    display: flex;
+}
+
+
+main > section:last-child > div > div{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 50px 30px 50px 30px;
+}
+
+
+div > button {
+    border: none;
+    background-color: whitesmoke;
+}
+
+
+div > button:hover {
+    background-color: gainsboro;
+}
+
+
+button {
+    height: 50px;
+}
