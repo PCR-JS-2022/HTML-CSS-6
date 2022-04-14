@@ -1,0 +1,132 @@
+body {
+    margin: 0px;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+}
+    
+header, footer {
+    text-align: center;
+    height: 35px;
+    background-color: #EFEFEF;
+    flex: 0 0 auto;
+}
+    
+main {
+    background-color:#fff;
+    width: 100%;
+    display: inline-flex;
+    flex: 1 0 auto;
+}
+
+html {
+    height: 100%;
+}
+mark {
+    width: 30%;
+    background-color: #fff;
+}
+mark > div {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+mark > img {
+    height: 240px;
+    width: 320px;
+    display: block;
+    margin: 1em auto;
+}
+a {
+    display: inline-block;
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 20px;
+    margin: 5px;
+} 
+section {
+    width: 70%;
+    padding: 1em;
+}
+section > div {
+    margin-bottom: 40px;
+}
+section > div:nth-child(1) > h2 {
+    margin: 0 0 20px 0;
+}
+section > div:nth-child(2){
+    gap: 10px;
+    display: flex;
+    padding: auto 0;
+}
+section > div:nth-child(2) > img {
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
+section > div:nth-child(2) > button {
+    margin-left: auto;
+    cursor: pointer;
+}
+article, 
+div > div:nth-child(3) {
+    border-top: 1px solid #E2E2E2;
+    border-bottom: 1px solid #E2E2E2;
+}
+article {
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+}
+article > div > * {
+    margin: 0;
+}
+article > img {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+}
+article > div > article {
+    display: flex;
+    margin-left: 10%;
+    width: 90%;
+    flex-direction: row;
+}
+div > article {
+    width: 100%;
+}
+article > div > article:nth-child(2n+1)  {
+    background-color:rgb(240, 240, 240);
+}
+b {
+   margin: auto 0;
+}
+article > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+article > article {
+    flex-direction: row;
+}
+
+@media (max-width: 798px) {
+    main {
+        flex-direction: column;
+    }
+    mark {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    mark > div {
+        order: -1;
+    }
+    section {
+        width: 80%;
+        padding: 0;
+        margin: 10%;
+    }
+}
