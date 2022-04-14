@@ -1,0 +1,64 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    color: #202020;
+    font-size: 18px;
+    font-family: "Courier New", Courier, monospace;
+  }
+  
+  header,
+  footer {
+    width: 100%;
+    min-height: 50px;
+    background-color: rgb(228, 228, 228);
+  }
+  
+  h1,
+  h2 {
+    margin: 0px;
+    margin-bottom: 10px;
+    padding: 0px;
+    font-size: 1.5rem;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  main {
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .photo-area,
+  .comment,
+  .content-area {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .photo-area {
+    flex: 25%;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: dashed #202020 2px;
+  }
+
+  .content-area {
+    flex: 75%;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+.container > h1 {
+    display: none;
+    margin: 0px 40px;
+    margin-top: 20px;
+}
+
+.container > .tag-area {
+    display: none;
+    margin: 20px 40px;
+    margin-bottom: 0px;
+}
