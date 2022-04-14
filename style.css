@@ -1,0 +1,135 @@
+html, body {
+    height: 100vmin;
+    margin: 0;
+}
+
+:root{
+    --theme_color:#004A8F;
+    --com_Bg:#C4C4C4;
+}
+
+header{
+    background-color: var(--theme_color);
+    height: 50px;
+    margin-top: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--com_Bg);
+}
+
+main{
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+    width: 90%;
+}
+
+article > div> span{
+    margin-right: 10px;
+}
+
+article > div> span:nth-child(odd){
+    color: green;
+}
+
+
+main > div{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+main > div > div:nth-child(2){
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+main > div > div:nth-child(2) > div{
+    margin-right: 20px;
+}
+
+main > div > div span{
+    margin-left: 1100px;
+    margin-top: 10px;
+    
+}
+
+main > div > div:nth-child(2) > div img{
+    text-align: center;
+    width: 25px;
+}
+
+
+button{
+   width: 40px;
+   height: 30px;
+}
+
+li{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+li:nth-child(odd){
+    background-color: var(--com_Bg);
+    border-radius: 20px;
+}
+
+li > div{
+    display: flex;
+    align-items:center;
+}
+
+li > div > time{
+    margin-left: 20px;
+}
+
+li img{
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    border-radius: 30px;
+
+}
+
+ul > li:nth-child(2){
+    margin-left: 200px;
+}
+
+ul > li:nth-child(3){
+    margin-left: 200px;
+}
+
+footer{
+    margin-bottom: 0px;
+    border-top: 1px solid var(--com_Bg);
+    height: 50px;
+    background-color:var(--theme_color);
+}
+
+@media (max-width: 1060px){
+    main{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    article>img{
+        width: 500px;
+    }
+}
+
+@media (max-width: 640px){
+    ul > li:nth-child(2){
+        margin-left: 20px;
+    }
+    
+    ul > li:nth-child(3){
+        margin-left: 20px;
+    }
+}
