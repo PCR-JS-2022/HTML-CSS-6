@@ -40,6 +40,7 @@
 }
 
 .actions {
+    justify-content: flex-start;
     grid-area: actions;
     display: flex;
     align-items: center;
@@ -51,6 +52,7 @@
 }
 
 .add-comment {
+    justify-self: flex-end;
     cursor: pointer;
     font-size: large;
     background: transparent;
