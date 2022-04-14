@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 	<title>Title</title>
 	<link rel="stylesheet" href="styles/base.css">
-	<link rel="stylesheet" href="styles/photo.css">
+	<link rel="stylesheet" href="styles/content.css">
 	<link rel="stylesheet" href="styles/comments.css">
 	<link rel="stylesheet" href="styles/modal.css">
+	<link rel="stylesheet" href="styles/mobile.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
@@ -16,61 +17,64 @@
 	<h1>Photo page</h1>
 </header>
 <main>
-	<article>
-		<img src="./images/forest.jpg" alt="forest">
-		<div>
-			<p>Date: 27.06.2019</p>
-			<p>Location: Sweden</p>
-			<p>Description: A magnificent house in the forest on the shore of the lake</p>
+	<article class="content">
+		<img class="picture" src="./images/forest.jpg" alt="forest">
+		<div class="info">
+			<p class="date">Date: 27.06.2019</p>
+			<p class="location">Location: Sweden</p>
+			<p class="description">Description: A magnificent house in the forest on the shore of the lake</p>
 		</div>
-		<span>
-            <span>house</span>
-            <span>forest</span>
-            <span>lake</span>
+		<span class="tags">
+            <span class="tag">house</span>
+            <span class="tag">forest</span>
+            <span class="tag">lake</span>
         </span>
-		<div>
+		<div class="actions">
 			<i>🤍</i>
-			<span>13</span>
+			<span class="action">13</span>
 			<i>💬</i>
-			<span>3</span>
+			<span class="action">3</span>
 		</div>
-		<button>Add comment</button>
-		<section>
-			<div>
-				<img src="./images/woman2.png" alt="avatar">
-				<span>Ann</span>
-				<span>16.03.2022</span>
-				<p>Very beautiful!</p>
+		<button class="add-comment">Add comment</button>
+		<section class="comments">
+			<div class="comment">
+				<img class="profile-picture" src="./images/woman2.png" alt="avatar">
+				<span class="name">Ann</span>
+				<span class="date">16.03.2022</span>
+				<p class="message">Very beautiful!</p>
 			</div>
-			<section>
-				<div>
-					<img src="./images/man2.png" alt="avatar">
-					<span>Evgeny</span>
-					<span>16.03.2022</span>
-					<p>Thanks!</p>
+			<section class="comments">
+				<div class="comment">
+					<img class="profile-picture" src="./images/man2.png" alt="avatar">
+					<span class="name">Evgeny</span>
+					<span class="date">16.03.2022</span>
+					<p class="message">Thanks!</p>
 				</div>
-				<div>
-					<img src="./images/woman2.png" alt="avatar">
-					<span>Ann</span>
-					<span>17.03.2022</span>
-					<p>When were you in Sweden?</p>
+				<div class="comment">
+					<img class="profile-picture" src="./images/woman2.png" alt="avatar">
+					<span class="name">Ann</span>
+					<span class="date">17.03.2022</span>
+					<p class="message">When were you in Sweden?</p>
 				</div>
-				<div>
-					<img src="./images/man2.png" alt="avatar">
-					<span>Evgeny</span>
-					<span>17.03.2022</span>
-					<p>On summer vacation 3 years ago.</p>
+				<div class="comment">
+					<img class="profile-picture" src="./images/man2.png" alt="avatar">
+					<span class="name">Evgeny</span>
+					<span class="date">17.03.2022</span>
+					<p class="message">On summer vacation 3 years ago.</p>
 				</div>
 			</section>
-			<div>
-				<img src="./images/man1.png" alt="avatar">
-				<span>Dmitry</span>
-				<span>17.03.2022</span>
-				<p>Wow, now I want to go there too!</p>
+			<div class="comment">
+				<img class="profile-picture" src="./images/man1.png" alt="avatar">
+				<span class="name">Dmitry</span>
+				<span class="date">17.03.2022</span>
+				<p class="message">Wow, now I want to go there too!</p>
 			</div>
 		</section>
 	</article>
 </main>
+
+<!-- Раскрытое фото-->
+<!--
 <div class="darkening">
 	<div class="modal">
 		<div class="likes">
@@ -157,7 +161,8 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div>-->
+
 <footer></footer>
 </body>
 </html>

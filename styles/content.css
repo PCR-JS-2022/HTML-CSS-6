@@ -1,4 +1,4 @@
-article {
+.content {
     display: grid;
     grid-template-columns: 320px 1fr 120px;
     grid-template-rows: 200px 25px 1fr;
@@ -10,28 +10,28 @@ article {
     column-gap: 60px;
 }
 
-article > img {
+.picture {
     grid-area: photo;
     width: 320px;
     height: 240px;
     border-radius: 3px;
 }
 
-article > img + div {
+.info {
     grid-area: info;
 }
 
-article > img + div > p {
+.date .description .location {
     margin: 0 0 20px 0;
 }
 
-article > span {
+.tags {
     display: flex;
     flex-wrap: wrap;
     grid-area: tags;
 }
 
-article > span span {
+.tag {
     background: rgba(154, 159, 158, 0.20);
     border-radius: 3px;
     padding: 5px 10px;
@@ -39,25 +39,21 @@ article > span span {
     height: fit-content;
 }
 
-article > span + div {
+.actions {
     grid-area: actions;
     display: flex;
     align-items: center;
 }
 
-article > span + div > span {
+.action {
     padding-left: 8px;
     margin-right: 20px;
 }
 
-article > button {
+.add-comment {
     cursor: pointer;
     font-size: large;
     background: transparent;
     border: none;
     grid-area: add_comment;
-}
-
-article section {
-    grid-area: comments;
 }
