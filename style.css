@@ -1,0 +1,164 @@
+body {
+    font-family: sans-serif;
+}
+
+main {
+    display: flex;
+}
+
+header,
+footer {
+    height: 60px;
+}
+
+header {
+    border-bottom: 1px solid #000000;
+}
+
+footer {
+    border-top: 1px solid #000000;
+}
+
+section>a {
+    width: 80px;
+    display: flex;
+    background-color: #4e484838;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+section>img {
+    width: 320px;
+    height: 240px;
+    margin-bottom: 15px;
+}
+
+button>img {
+    width: 25px;
+    vertical-align: middle;
+}
+
+li>div>img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+button {
+    background: transparent;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+}
+
+section>span {
+    margin-right: 30px;
+    padding: 8px;
+}
+
+main>section {
+    padding: 25px;
+}
+
+main>section:last-child>section:first-child {
+    height: 190px;
+    position: relative;
+}
+
+section>div:last-child {
+    display: flex;
+    position: absolute;
+    bottom: -25px;
+}
+
+section>div:last-child>div:first-child {
+    padding-right: 35px;
+    padding-left: 10px;
+}
+
+section>div:last-child>button {
+    margin-left: 935px;
+}
+
+main>section:last-child>section:last-child {
+    padding-top: 15px;
+}
+
+main>section:first-child {
+    padding-left: 80px;
+}
+
+main>section:last-child {
+    width: 1250px;
+}
+
+li>div {
+    padding: 10px;
+    display: flex;
+}
+
+section>ul {
+    border-top: 1px solid #000000;
+}
+
+li>div>section {
+    padding-left: 20px;
+}
+
+li>ul {
+    padding-left: 250px;
+}
+
+li>ul>li:nth-child(odd) {
+    background-color: #7e747450;
+}
+
+li {
+    padding: 10px 0px 10px 10px;
+}
+
+@media screen and (max-width: 800px) {
+    main {
+        flex-direction: column;
+    }
+    .photo-block {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    main>section:last-child {
+        width: 85%;
+    }
+    h1 {
+        order: 1;
+    }
+    .comments-block {
+        display: inline-flex;
+    }
+    .comment {
+        display: inline-flex;
+    }
+    .photo-description {
+        width: 100%;
+    }
+    .buttons-block {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    main {
+        padding: 10px;
+    }
+    .comments-block {
+        font-size: 14px;
+    }
+    .comment {
+        width: auto;
+    }
+}
