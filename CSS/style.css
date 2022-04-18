@@ -69,7 +69,11 @@ figcaption {
 
 span {
     width: fit-content;
-    margin: 0 10px 10px 10px;
+    margin: 0 10px 0 10px;
+}
+
+.second_h2 {
+    display: none;
 }
 
 aside {
@@ -92,7 +96,7 @@ aside > div > section:nth-child(2) {
     margin: 25px 0 10px 0;
 }
 
-h2 {
+.first_h2 {
     margin: 0 0 40px 0;
 }
 
@@ -112,6 +116,7 @@ button {
     background-color: rgb(243, 221, 188);
     border-width: 0px;
     cursor: pointer;
+    padding: 0;
 }
 
 li::marker {
@@ -163,3 +168,71 @@ div > p {
 footer{
     border-top: 3px solid rgb(165, 164, 162);
 }
+
+@media screen and (max-width: 800px) {
+    *:not(h1) {
+        font-size: 14px;
+    }
+    
+    h1 {
+        font-size: 26px;
+    }
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article {
+        width: 320px;
+    }
+
+    figure {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0;
+
+    }
+
+    figcaption{
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+
+    img {
+        margin: 0;
+    }
+
+    figcaption > span {
+        margin: 0;
+    }
+
+    .first_h2 {
+        display: none;
+    }
+    .second_h2 {
+        display: block;
+        font-size: 16px;
+    }
+
+    aside {
+        padding: 0 20px 20px 20px;
+        width: 320px;
+    }
+ 
+    aside > div > section:nth-child(1){
+    flex: 1 1 100%;
+    }
+
+    section div section  img {
+        margin-right: 5px;
+    }
+
+    li> div> div  {
+        margin-right: 5px;
+    }
+
+    li> div> div> div> p:last-child {
+        text-align: end;
+    } 
+}
+    
