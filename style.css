@@ -190,7 +190,6 @@ ul:first-child {
 @media screen and (max-width: 850px) {
     main {
         flex-wrap: wrap;
-        justify-content: center;
     }
 
     main>div:first-child {
@@ -203,6 +202,12 @@ ul:first-child {
     main>div:first-child>div {
         order: -1;
         margin-bottom: 30px;
+    }
+
+    main>div:first-child>div,
+    main>div:first-child>img {
+        padding: 0 20px 0 20px;
+        width: calc(100vw - 40px);
     }
 
     section{
@@ -228,15 +233,7 @@ ul:first-child {
     li>div>div {
         margin-left: 20px;
     }
-
-    main>div:first-child>div,
-    main>div:first-child>img {
-        width: 200px;
-    }
-    main>div:first-child>img{
-        height: auto;
-    }
-
+    
     section>div:first-child>div:nth-child(3) div:nth-child(2) {
         margin-left: 30px;
     }
