@@ -30,9 +30,26 @@ header div {
   border-bottom: 1px solid var(--border-color);
 }
 main {
-  margin: 27px 37px 10px 45px;
-  display: flex;
-  justify-content: space-between;
+  margin: 37px 50px;
+  display: grid;
+  grid-template-areas: "pic info" "pic com";
+  column-gap: 20px;
+}
+@media (max-width: 900px) {
+  main {
+    margin: 37px;
+    grid-template-areas: "info" "pic" "com";
+  }
+}
+.picture-wrapper {
+  grid-area: pic;
+  margin: 0;
+}
+.picture-info {
+  grid-area: info;
+}
+.actions-and-comments {
+  grid-area: com;
 }
 .actions {
   display: flex;
